@@ -10,6 +10,7 @@ import { HeaderComponent } from "./header/header.component";
 import { NavigationComponent } from "./navigation/navigation.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { ConfigService } from "./config.service";
+import { ContactsComponent } from "./contacts/contacts.component";
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ConfigService } from "./config.service";
     ClientsComponent,
     HeaderComponent,
     NavigationComponent,
+    ContactsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [ConfigService],
