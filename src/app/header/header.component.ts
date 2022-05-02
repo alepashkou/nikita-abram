@@ -1,17 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { ConfigService } from '../config.service';
+import { Component } from "@angular/core";
+import { ConfigService } from "../config.service";
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  selector: "app-header",
+  templateUrl: "./header.component.html",
+  styleUrls: ["./header.component.css"],
 })
-export class HeaderComponent implements OnInit {
-  header = { };
+export class HeaderComponent {
+  header = {};
 
-  constructor(private config: ConfigService) {}
-
-  ngOnInit() {
+  constructor(private config: ConfigService) {
     this.header = this.getHeader();
   }
 
