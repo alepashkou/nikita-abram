@@ -11,6 +11,7 @@ import { NavigationComponent } from "./navigation/navigation.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { ConfigService } from "./config.service";
 import { ContactsComponent } from "./contacts/contacts.component";
+import { PricingComponent } from "./pricing/pricing.component";
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ContactsComponent } from "./contacts/contacts.component";
     HeaderComponent,
     NavigationComponent,
     ContactsComponent,
+    PricingComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [ConfigService],
